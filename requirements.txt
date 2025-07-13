@@ -1,0 +1,7 @@
+langchain
+chromadb
+huggingface-hub
+openai
+pyPDF
+python-dotenv
+

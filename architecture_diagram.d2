@@ -1,0 +1,45 @@
+direction: right
+
+User -> App: Query
+App -> Ingest: Ingest Documents
+Ingest -> ChromaDB: Store Embeddings
+App -> ChromaDB: Retrieve Embeddings
+App -> LLM: Query LLM
+LLM -> App: Response
+App -> User: Display Response
+
+class App { 
+  shape: rectangle
+  style: { 
+    fill: "#FFD700"
+  }
+}
+
+class Ingest { 
+  shape: rectangle
+  style: { 
+    fill: "#ADFF2F"
+  }
+}
+
+class ChromaDB { 
+  shape: cylinder
+  style: { 
+    fill: "#87CEEB"
+  }
+}
+
+class LLM { 
+  shape: cloud
+  style: { 
+    fill: "#DA70D6"
+  }
+}
+
+class User { 
+  shape: person
+  style: { 
+    fill: "#F08080"
+  }
+}
+
